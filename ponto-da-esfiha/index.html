@@ -120,6 +120,14 @@
 			width: 100%
 		}
 
+		.bee-row-4 .bee-col-1 .bee-block-1 h1,
+		.bee-row-5 .bee-col-1 .bee-block-1 h1 {
+			font-family: Fira Sans, Lucida Sans Unicode, Lucida Grande, sans-serif;
+			letter-spacing: normal;
+			line-height: 120%;
+			direction: ltr
+		}
+
 		.bee-image img {
 			display: block;
 			width: 100%
@@ -278,14 +286,17 @@
 			width: 100%
 		}
 
+		.bee-row-5 .bee-col-1 .bee-block-1 h1 {
+			color: #f4f3f8;
+			font-size: 37px;
+			font-weight: 700;
+			text-align: center
+		}
+
 		.bee-row-4 .bee-col-1 .bee-block-1 h1 {
 			color: #2d2d2d;
-			direction: ltr;
-			font-family: Fira Sans, Lucida Sans Unicode, Lucida Grande, sans-serif;
 			font-size: 60px;
 			font-weight: 900;
-			letter-spacing: normal;
-			line-height: 120%;
 			text-align: left
 		}
 
@@ -325,17 +336,6 @@
 		.bee-row-6 .bee-col-3 .bee-block-1 p:not(:last-child),
 		.bee-row-9 .bee-col-1 .bee-block-2 p:not(:last-child) {
 			margin-bottom: 16px
-		}
-
-		.bee-row-5 .bee-col-1 .bee-block-1 h1 {
-			color: #f4f3f8;
-			direction: ltr;
-			font-family: Fira Sans, Lucida Sans Unicode, Lucida Grande, sans-serif;
-			font-size: 37px;
-			font-weight: 700;
-			letter-spacing: normal;
-			line-height: 120%;
-			text-align: center
 		}
 
 		.bee-row-7 .bee-col-1 .bee-block-1 h1 {
@@ -390,9 +390,14 @@
 				padding: 0 10px 0 20px !important
 			}
 
-			.bee-row-4 .bee-col-1 .bee-block-2 img {
+			.bee-row-4 .bee-col-1 .bee-block-2 img,
+			.bee-row-9 .bee-col-2 .bee-block-2 img {
 				float: none !important;
 				margin: 0 auto !important
+			}
+
+			.bee-row-5 .bee-col-1 .bee-block-2 {
+				height: 5px !important
 			}
 
 			.bee-row-4 .bee-col-1 .bee-block-1 {
@@ -413,8 +418,9 @@
 				text-align: center !important
 			}
 
-			.bee-row-5 .bee-col-1 .bee-block-2 {
-				height: 5px !important
+			.bee-row-7 .bee-col-1 .bee-block-3,
+			.bee-row-7 .bee-col-1 .bee-block-5 {
+				height: 25px !important
 			}
 
 			.bee-row-7 .bee-col-1 .bee-block-1 {
@@ -425,9 +431,8 @@
 				font-size: 28px
 			}
 
-			.bee-row-7 .bee-col-1 .bee-block-3,
-			.bee-row-7 .bee-col-1 .bee-block-5 {
-				height: 25px !important
+			.bee-row-7 .bee-col-1 .bee-block-2 {
+				padding: 15px 10px !important
 			}
 
 			.bee-row-8 .bee-col-1 .bee-block-1,
@@ -435,26 +440,50 @@
 				height: 20px !important
 			}
 
-			.bee-row-7 .bee-col-1 .bee-block-2 {
-				padding: 15px 10px !important
-			}
-
-			.bee-row-7 .bee-col-1 .bee-block-6,
 			.bee-row-9 .bee-col-1 .bee-block-3 {
 				padding: 10px 20px !important
 			}
 
-			.bee-row-7 .bee-col-1 .bee-block-6 .bee-button-content,
 			.bee-row-9 .bee-col-1 .bee-block-3 .bee-button-content {
 				font-size: initial !important;
 				line-height: normal !important;
 				text-align: center !important
 			}
 
-			.bee-row-7 .bee-col-1 .bee-block-6 a,
-			.bee-row-7 .bee-col-1 .bee-block-6 span,
 			.bee-row-9 .bee-col-1 .bee-block-3 a,
 			.bee-row-9 .bee-col-1 .bee-block-3 span {
+				text-align: center !important;
+				font-size: 16px !important;
+				line-height: auto !important
+			}
+
+			.bee-row-9 .bee-col-2 .bee-block-2 {
+				padding: 0 25px !important
+			}
+		}
+
+		.bee-row-9 .bee-col-1 .bee-block-3 a {
+			background-color: #2f08c4;
+			color: #ffffff;
+			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+			font-size: 20px;
+			letter-spacing: 0;
+			line-height: 200%
+		}
+
+		@media (max-width:768px) {
+			.bee-row-7 .bee-col-1 .bee-block-6 {
+				padding: 10px 20px !important
+			}
+
+			.bee-row-7 .bee-col-1 .bee-block-6 .bee-button-content {
+				font-size: initial !important;
+				line-height: normal !important;
+				text-align: center !important
+			}
+
+			.bee-row-7 .bee-col-1 .bee-block-6 a,
+			.bee-row-7 .bee-col-1 .bee-block-6 span {
 				text-align: center !important;
 				font-size: 16px !important;
 				line-height: auto !important
@@ -465,15 +494,6 @@
 			background-color: #126449;
 			color: #ffffff;
 			font-family: inherit;
-			font-size: 20px;
-			letter-spacing: 0;
-			line-height: 200%
-		}
-
-		.bee-row-9 .bee-col-1 .bee-block-3 a {
-			background-color: #2f08c4;
-			color: #ffffff;
-			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
 			font-size: 20px;
 			letter-spacing: 0;
 			line-height: 200%
@@ -495,15 +515,6 @@
 		}
 
 		@media (max-width:768px) {
-			.bee-row-9 .bee-col-2 .bee-block-2 {
-				padding: 0 25px !important
-			}
-
-			.bee-row-9 .bee-col-2 .bee-block-2 img {
-				float: none !important;
-				margin: 0 auto !important
-			}
-
 			.bee-row-11 .bee-col-2 .bee-block-1 {
 				font-size: 16px !important
 			}
@@ -643,9 +654,9 @@
 </div>
 <div class="bee-col bee-col-3 bee-col-w4">
 <div class="bee-block bee-block-1 bee-paragraph">
-<p>A economia estimada anual da loja Wanel Ville em Sorocaba é mais de 22 mil reais que vai ficar no caixa da empresa.</p>
+<p>A economia estimada anual da loja Wanel Ville em Sorocaba é mais de 16 mil reais que vai ficar no caixa da empresa.</p>
 </div>
-<div class="bee-block bee-block-2 bee-image"><a href="https://wa.me/15981153634?text=Ol%C3%A1!%20Quero%20saber%20como%20economizar%20energia%20como%20outras%20lojas%20do%20Ponto%20da%20Esfiha." target="_blank"><img alt="" class="bee-center bee-autowidth" src="images/Proposta_de_Adesao_23233_08-05-2025_15_38-1.png" style="max-width:345px;"/></a></div>
+<div class="bee-block bee-block-2 bee-image"><a href="https://wa.me/15981153634?text=Ol%C3%A1!%20Quero%20saber%20como%20economizar%20energia%20como%20outras%20lojas%20do%20Ponto%20da%20Esfiha." target="_blank"><img alt="" class="bee-center bee-autowidth" src="images/Wanel_page-0001.jpg" style="max-width:345px;"/></a></div>
 </div>
 </div>
 </div>
