@@ -21,7 +21,6 @@
 		}
 
 		.bee-row-1,
-		.bee-row-10 .bee-row-content,
 		.bee-row-2,
 		.bee-row-3,
 		.bee-row-4,
@@ -119,14 +118,6 @@
 		.bee-row-7 .bee-col-1 .bee-block-2,
 		.bee-row-9 .bee-col-2 .bee-block-2 {
 			width: 100%
-		}
-
-		.bee-row-4 .bee-col-1 .bee-block-1 h1,
-		.bee-row-5 .bee-col-1 .bee-block-1 h1 {
-			font-family: Fira Sans, Lucida Sans Unicode, Lucida Grande, sans-serif;
-			letter-spacing: normal;
-			line-height: 120%;
-			direction: ltr
 		}
 
 		.bee-image img {
@@ -268,6 +259,7 @@
 		}
 
 		.bee-row-10 .bee-row-content {
+			background-color: #adefe3;
 			border-bottom: 4px solid transparent;
 			border-left: 4px solid transparent;
 			border-radius: 23px;
@@ -288,16 +280,31 @@
 
 		.bee-row-4 .bee-col-1 .bee-block-1 h1 {
 			color: #2d2d2d;
+			direction: ltr;
+			font-family: Fira Sans, Lucida Sans Unicode, Lucida Grande, sans-serif;
 			font-size: 60px;
 			font-weight: 900;
+			letter-spacing: normal;
+			line-height: 120%;
 			text-align: left
 		}
 
-		.bee-row-5 .bee-col-1 .bee-block-1 h1 {
-			color: #f4f3f8;
-			font-size: 37px;
-			font-weight: 700;
-			text-align: center
+		.bee-row-4 .bee-col-2 .bee-block-3 a {
+			background-color: #126449;
+			border-bottom: 1px solid #126449;
+			border-left: 1px solid #126449;
+			border-radius: 4px;
+			border-right: 1px solid #126449;
+			border-top: 1px solid #126449;
+			color: #ffffff;
+			direction: ltr;
+			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+			font-size: 20px;
+			font-weight: 400;
+			letter-spacing: 0;
+			line-height: 200%;
+			padding: 5px 20px;
+			width: auto
 		}
 
 		.bee-row-6 .bee-col-1 .bee-block-1,
@@ -320,22 +327,15 @@
 			margin-bottom: 16px
 		}
 
-		.bee-row-4 .bee-col-2 .bee-block-3 a {
-			background-color: #126449;
-			border-bottom: 1px solid #126449;
-			border-left: 1px solid #126449;
-			border-radius: 4px;
-			border-right: 1px solid #126449;
-			border-top: 1px solid #126449;
-			color: #ffffff;
+		.bee-row-5 .bee-col-1 .bee-block-1 h1 {
+			color: #f4f3f8;
 			direction: ltr;
-			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
-			font-size: 20px;
-			font-weight: 400;
-			letter-spacing: 0;
-			line-height: 200%;
-			padding: 5px 20px;
-			width: auto
+			font-family: Fira Sans, Lucida Sans Unicode, Lucida Grande, sans-serif;
+			font-size: 37px;
+			font-weight: 700;
+			letter-spacing: normal;
+			line-height: 120%;
+			text-align: center
 		}
 
 		.bee-row-7 .bee-col-1 .bee-block-1 h1 {
@@ -356,10 +356,21 @@
 			border-radius: 4px;
 			border-right: 1px solid #126449;
 			border-top: 1px solid #126449;
-			color: #ffffff;
 			font-weight: 400;
 			padding: 5px 20px;
-			width: auto
+			width: auto;
+			direction: ltr
+		}
+
+		.bee-row-9 .bee-col-1 .bee-block-2 {
+			color: #101112;
+			direction: ltr;
+			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
+			font-size: 20px;
+			font-weight: 700;
+			letter-spacing: 0;
+			line-height: 120%;
+			text-align: center
 		}
 
 		@media (max-width:768px) {
@@ -367,12 +378,12 @@
 				display: block
 			}
 
-			.bee-row-3 .bee-col-2 .bee-block-1 {
-				height: 10px !important
-			}
-
 			.bee-row-1 .bee-col-1 .bee-block-1 {
 				height: 1px !important
+			}
+
+			.bee-row-3 .bee-col-2 .bee-block-1 {
+				height: 10px !important
 			}
 
 			.bee-row-4 .bee-col-1 .bee-block-2 {
@@ -393,10 +404,6 @@
 				text-align: center
 			}
 
-			.bee-row-5 .bee-col-1 .bee-block-2 {
-				height: 5px !important
-			}
-
 			.bee-row-4 .bee-col-2 .bee-block-3 {
 				padding: 20px 10px 15px !important;
 				text-align: center !important
@@ -404,6 +411,10 @@
 
 			.bee-row-4 .bee-col-2 .bee-block-3 .bee-button-content {
 				text-align: center !important
+			}
+
+			.bee-row-5 .bee-col-1 .bee-block-2 {
+				height: 5px !important
 			}
 
 			.bee-row-7 .bee-col-1 .bee-block-1 {
@@ -419,83 +430,53 @@
 				height: 25px !important
 			}
 
-			.bee-row-8 .bee-col-1 .bee-block-1 {
+			.bee-row-8 .bee-col-1 .bee-block-1,
+			.bee-row-9 .bee-col-2 .bee-block-1 {
 				height: 20px !important
-			}
-
-			.bee-row-7 .bee-col-1 .bee-block-6 {
-				padding: 10px 20px !important
-			}
-
-			.bee-row-7 .bee-col-1 .bee-block-6 .bee-button-content {
-				font-size: initial !important;
-				line-height: normal !important;
-				text-align: center !important
-			}
-
-			.bee-row-7 .bee-col-1 .bee-block-6 a,
-			.bee-row-7 .bee-col-1 .bee-block-6 span {
-				text-align: center !important;
-				font-size: 16px !important;
-				line-height: auto !important
 			}
 
 			.bee-row-7 .bee-col-1 .bee-block-2 {
 				padding: 15px 10px !important
 			}
-		}
 
-		.bee-row-7 .bee-col-1 .bee-block-6 a {
-			background-color: #126449;
-			direction: ltr;
-			font-family: inherit;
-			font-size: 20px;
-			letter-spacing: 0;
-			line-height: 200%
-		}
-
-		.bee-row-9 .bee-col-1 .bee-block-2,
-		.bee-row-9 .bee-col-1 .bee-block-3 a {
-			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
-			direction: ltr;
-			letter-spacing: 0
-		}
-
-		@media (max-width:768px) {
+			.bee-row-7 .bee-col-1 .bee-block-6,
 			.bee-row-9 .bee-col-1 .bee-block-3 {
 				padding: 10px 20px !important
 			}
 
+			.bee-row-7 .bee-col-1 .bee-block-6 .bee-button-content,
 			.bee-row-9 .bee-col-1 .bee-block-3 .bee-button-content {
 				font-size: initial !important;
 				line-height: normal !important;
 				text-align: center !important
 			}
 
+			.bee-row-7 .bee-col-1 .bee-block-6 a,
+			.bee-row-7 .bee-col-1 .bee-block-6 span,
 			.bee-row-9 .bee-col-1 .bee-block-3 a,
 			.bee-row-9 .bee-col-1 .bee-block-3 span {
 				text-align: center !important;
 				font-size: 16px !important;
 				line-height: auto !important
 			}
+		}
 
-			.bee-row-9 .bee-col-2 .bee-block-1 {
-				height: 20px !important
-			}
+		.bee-row-7 .bee-col-1 .bee-block-6 a {
+			background-color: #126449;
+			color: #ffffff;
+			font-family: inherit;
+			font-size: 20px;
+			letter-spacing: 0;
+			line-height: 200%
 		}
 
 		.bee-row-9 .bee-col-1 .bee-block-3 a {
 			background-color: #2f08c4;
+			color: #ffffff;
+			font-family: Lato, Tahoma, Verdana, Segoe, sans-serif;
 			font-size: 20px;
+			letter-spacing: 0;
 			line-height: 200%
-		}
-
-		.bee-row-9 .bee-col-1 .bee-block-2 {
-			color: #101112;
-			font-size: 20px;
-			font-weight: 700;
-			line-height: 120%;
-			text-align: center
 		}
 
 		.bee-row-11 .bee-col-2 .bee-block-1 {
@@ -528,36 +509,8 @@
 			}
 		}
 	</style>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1236015251432633');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1236015251432633&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5XDG97P4');</script>
-<!-- End Google Tag Manager -->
 </head>
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5XDG97P4"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
 <div class="bee-page-container">
 <div class="bee-row bee-row-1">
 <div class="bee-row-content">
@@ -603,7 +556,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 <div class="bee-col bee-col-2 bee-col-w8">
 <div class="bee-block bee-block-1 bee-spacer">
-<div class="spacer" style="height:35px;"></div>
+<div class="spacer" style="height:15px;"></div>
 </div>
 </div>
 <div class="bee-col bee-col-3 bee-col-w2">
@@ -768,19 +721,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="bee-row-content">
 <div class="bee-col bee-col-1 bee-col-w12">
 <div class="bee-block bee-block-1 bee-html-block">
-<div style="max-width: 700px; margin: 25px auto; font-family: Arial, sans-serif; text-align: center; padding: 20px;">
-<h2 style="font-size: 24px; color: #0a12a3; margin-bottom: 15px;">
-								💡 Quanto mais lojas aderirem, maior a força do Grupo Econômico do Ponto da Esfiha
-							</h2>
-<p style="font-size: 16px; color: #333333; line-height: 1.6; margin-bottom: 15px;">
-								Hoje, algumas unidades já estão economizando com a <strong>INEER</strong>. Mas, se mais lojas entrarem, podemos consolidar um volume ainda maior de consumo, garantindo <strong>20% de economia vitalícia</strong> para todo o grupo.
+<div style="padding: 40px 20px; font-family: Arial, sans-serif; text-align: center; color: #222; border-radius: 8px; max-width: 700px; margin: 0 auto;">
+<h1 style="color: #0a12a3; font-size: 26px; font-weight: bold; margin-bottom: 25px;">
+								💼 Grupo Econômico do Ponto da Esfiha: mais força, mais economia
+							</h1>
+<p style="font-size: 18px; font-weight: bold; color: #d63333; margin-bottom: 15px;">
+								🔥 Você começa com 20% de desconto. Mas só por tempo limitado.
 							</p>
-<p style="font-size: 16px; color: #333333; line-height: 1.6; margin-bottom: 20px;">
-								É o poder da união: uma <strong>economia coletiva</strong>, todos os meses, direto no caixa de cada loja — <strong>sem investimento, sem burocracia</strong>.
+<p style="font-size: 16px; line-height: 1.6; margin-bottom: 15px;">
+								A adesão inicial ao modelo da INEER oferece <strong>20% de economia promocional</strong>. Mas após esse período:
 							</p>
-<p style="font-size: 17px; font-weight: bold; color: #0a12a3;">
-								👉 Junte-se às unidades que já aderiram e fortaleça essa economia para todo o grupo
+<ul style="font-size: 16px; line-height: 1.6; text-align: left; display: inline-block; margin-bottom: 25px; padding-left: 20px;">
+<li>❌ Quem não entrar no <strong>Grupo Econômico</strong> mantém apenas <strong>10%</strong> de desconto;</li>
+<li>✅ Com o grupo batendo <strong>R$ 60 mil</strong>, o desconto sobe para <strong>15% vitalício</strong>;</li>
+<li>💥 Se passar de <strong>R$ 120 mil</strong>, o grupo garante <strong>20% de economia vitalícia</strong>.</li>
+</ul>
+<p style="font-size: 16px; margin-bottom: 30px;">
+								👉 <strong>Ou seja:</strong> quanto mais lojas participarem, maior e mais duradoura será a economia para todo mundo.
 							</p>
+<p style="font-size: 18px; font-weight: bold; color: #0a12a3; margin-bottom: 10px;">
+								🤝 Fortaleça o Grupo Econômico do Ponto da Esfiha
+							</p>
+<p style="font-size: 16px; line-height: 1.6; margin-bottom: 10px;">
+								Algumas unidades já estão dentro. Agora é a sua vez de se juntar e consolidar o grupo que <strong>garante até 20% de economia vitalícia</strong>.
+							</p>
+<p style="font-size: 16px; line-height: 1.6;">
+								💡 Quanto mais lojas participarem, maior o benefício coletivo.<br/>
+								📉 <strong>Menor custo fixo</strong><br/>
+								📈 <strong>Mais lucro no caixa — todos os meses</strong>
+</p>
+</div>
 </div>
 </div>
 </div>
@@ -800,18 +770,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <div class="bee-block bee-block-2 bee-html-block">
 <div style="padding: 40px 20px; background-color: #f1faff; font-family: Arial, sans-serif; color: #0a0a0a; text-align: center; max-width: 700px; margin: 0 auto;">
 <p style="font-size: 16px; line-height: 1.6; margin-bottom: 20px;">
-								Com uma fatura recente nós conseguimos calcular <strong>quanto você pode começar a economizar nos próximos meses</strong>.
-							</p>
+							Com uma fatura recente nós conseguimos calcular <strong>quanto você pode começar a economizar nos próximos meses</strong>.
+						</p>
 <p style="font-size: 16px; line-height: 1.6; margin-bottom: 30px;">
-								É gratuito, sem compromisso e pode se tornar a decisão mais estratégica que você toma esse ano — para o seu caixa e para o planeta. 🌱
-							</p>
+							É gratuito, sem compromisso e pode se tornar a decisão mais estratégica que você toma esse ano — para o seu caixa e para o planeta. 🌱
+						</p>
 <a href="https://wa.me/15981153634?text=Ol%C3%A1!%20Quero%20saber%20como%20economizar%20energia%20como%20outras%20lojas%20do%20Ponto%20da%20Esfiha.
 " style="background-color: #2e7d32; color: #ffffff; padding: 15px 30px; text-decoration: none; border-radius: 30px; font-size: 16px; font-weight: bold; display: inline-block;" target="_blank">
-								👉 Solicitar Simulação Gratuita
-							</a>
+							👉 Solicitar Simulação Gratuita
+						</a>
 <p style="margin-top: 15px; font-size: 16px; color: #555;">
-								Fale direto com <strong>Ismael Santos</strong> – Representante INEER
-							</p>
+							Fale direto com <strong>Ismael Santos</strong> – Representante INEER
+						</p>
 </div>
 </div>
 <div class="bee-block bee-block-3 bee-image"><a href="www.example.com" target="_blank"><img alt="Logo" class="bee-center bee-fixedwidth" src="images/INNER__LOGO__BRANCO.png" style="max-width:146px;"/></a></div>
@@ -823,8 +793,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 </div>
 </div>
-</div>
 </body>
 </html>
-
-
